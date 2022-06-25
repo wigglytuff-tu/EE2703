@@ -1,0 +1,8 @@
+fig = plt.figure()
+# ax = fig.gca(projection='3d')
+# surf = ax.plot_surface(X, Y, phi,rstride=1, cstride=1,cmap = cm.jet,linewidth=0, antialiased=False)
+# fig.colorbar(surf, shrink=0.5, aspect=5)
+# plt.title('3-D Surface plot of the potential')
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.show()

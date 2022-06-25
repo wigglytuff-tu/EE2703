@@ -1,0 +1,10 @@
+for f in np.arange(1.4,1.6,0.05):
+    TF = sp.lti([1],[1,0,2.25])
+    t = np.linspace(0,200,1001)
+    fx = np.cos(f*t)*np.exp(-0.05*t)
+    t,x,_ = sp.lsim(TF,fx,t)
+    plt.plot(t,x)
+    plt.title("Forced Damping Oscillator with frequency: "+str(f))
+    plt.xlabel("Time")
+    plt.ylabel("x")
+    plt.show()
